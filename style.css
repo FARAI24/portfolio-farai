@@ -1,0 +1,1169 @@
+/* ===================================== */
+/* COULEURS */
+/* ===================================== */
+
+:root {
+
+    --rose-fonce: #9f1d64;
+
+    --rose: #e2529b;
+
+    --rose-moyen: #f08abd;
+
+    --rose-clair: #fff0f7;
+
+    --rose-tres-clair: #fff8fc;
+
+    --blanc: #ffffff;
+
+    --texte: #333333;
+
+    --gris: #666666;
+
+}
+
+
+
+/* ===================================== */
+/* GENERAL */
+/* ===================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--texte);
+
+    background-color: var(--blanc);
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ===================================== */
+/* NAVIGATION */
+/* ===================================== */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 20px
+        rgba(159, 29, 100, 0.10);
+
+}
+
+
+.logo {
+
+    color: var(--rose-fonce);
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+}
+
+
+.menu {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 28px;
+
+}
+
+
+.menu li {
+
+    list-style: none;
+
+}
+
+
+.menu a {
+
+    color: var(--texte);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    color: var(--rose);
+
+}
+
+
+
+/* ===================================== */
+/* ACCUEIL */
+/* ===================================== */
+
+.accueil {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rose-tres-clair),
+            var(--rose-clair)
+        );
+
+}
+
+
+.accueil-texte {
+
+    width: 55%;
+
+}
+
+
+.bonjour {
+
+    color: var(--rose);
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.accueil h1 {
+
+    color: var(--rose-fonce);
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+
+}
+
+
+.accueil h2 {
+
+    color: #555555;
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.description {
+
+    max-width: 620px;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* ===================================== */
+/* PHOTO PRINCIPALE */
+/* ===================================== */
+
+.accueil-photo {
+
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.photo-profil {
+
+    width: 330px;
+
+    height: 330px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(159, 29, 100, 0.25);
+
+}
+
+
+
+/* ===================================== */
+/* BOUTONS */
+/* ===================================== */
+
+.boutons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 9px;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.btn-principal {
+
+    color: white;
+
+    background-color: var(--rose-fonce);
+
+}
+
+
+.btn-principal:hover {
+
+    background-color: var(--rose);
+
+    transform: translateY(-3px);
+
+}
+
+
+.btn-secondaire {
+
+    color: var(--rose-fonce);
+
+    background-color: transparent;
+
+    border: 2px solid var(--rose-fonce);
+
+}
+
+
+.btn-secondaire:hover {
+
+    color: white;
+
+    background-color: var(--rose-fonce);
+
+}
+
+
+
+/* ===================================== */
+/* SECTIONS */
+/* ===================================== */
+
+.section {
+
+    padding: 90px 10%;
+
+}
+
+
+.section-rose-clair {
+
+    background-color: var(--rose-clair);
+
+}
+
+
+.titre-section {
+
+    text-align: center;
+
+    color: var(--rose-fonce);
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.ligne-titre {
+
+    width: 70px;
+
+    height: 4px;
+
+    background-color: var(--rose);
+
+    margin: 0 auto 50px auto;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* ===================================== */
+/* À PROPOS */
+/* ===================================== */
+
+.apropos-contenu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+
+}
+
+
+.apropos-photo {
+
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.photo-apropos {
+
+    width: 300px;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(159, 29, 100, 0.20);
+
+}
+
+
+.apropos-texte {
+
+    width: 60%;
+
+}
+
+
+.apropos-texte h3 {
+
+    color: var(--rose-fonce);
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.apropos-texte p {
+
+    font-size: 17px;
+
+    margin-bottom: 16px;
+
+}
+
+
+
+/* ===================================== */
+/* COMPETENCES */
+/* ===================================== */
+
+.grille-competences {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.carte {
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    border-top: 4px solid var(--rose);
+
+    box-shadow:
+        0 6px 22px
+        rgba(159, 29, 100, 0.10);
+
+    transition: 0.3s;
+
+}
+
+
+.carte:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(159, 29, 100, 0.18);
+
+}
+
+
+.carte h3 {
+
+    color: var(--rose-fonce);
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ===================================== */
+/* EXPERIENCES */
+/* ===================================== */
+
+.experiences-liste {
+
+    max-width: 950px;
+
+    margin: auto;
+
+}
+
+
+.experience {
+
+    display: flex;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    border-left: 5px solid var(--rose);
+
+    box-shadow:
+        0 5px 20px
+        rgba(159, 29, 100, 0.10);
+
+}
+
+
+.experience-date {
+
+    min-width: 170px;
+
+    color: var(--rose);
+
+    font-weight: bold;
+
+}
+
+
+.experience-contenu h3 {
+
+    color: var(--rose-fonce);
+
+    font-size: 24px;
+
+}
+
+
+.experience-contenu h4 {
+
+    color: var(--gris);
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ===================================== */
+/* CERTIFICATIONS */
+/* ===================================== */
+
+.introduction-certifications {
+
+    max-width: 750px;
+
+    margin:
+        -20px auto
+        45px auto;
+
+    text-align: center;
+
+    color: var(--gris);
+
+    font-size: 17px;
+
+}
+
+
+.grille-certifications {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+
+}
+
+
+.certificat-carte {
+
+    min-width: 0;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px
+        rgba(159, 29, 100, 0.14);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.certificat-carte:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(159, 29, 100, 0.23);
+
+}
+
+
+
+/* ===================================== */
+/* APERÇU PDF */
+/* ===================================== */
+
+.apercu-pdf {
+
+    width: 100%;
+
+    height: 320px;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    border-bottom:
+        4px solid var(--rose);
+
+}
+
+
+.apercu-pdf iframe {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    background-color: white;
+
+}
+
+
+
+/* ===================================== */
+/* BADGE MICROSOFT */
+/* ===================================== */
+
+.apercu-badge {
+
+    width: 100%;
+
+    height: 320px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-bottom:
+        4px solid var(--rose);
+
+}
+
+
+.badge-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+
+/* ===================================== */
+/* CONTENU DES CERTIFICATS */
+/* ===================================== */
+
+.certificat-contenu {
+
+    padding: 28px;
+
+}
+
+
+.numero-certificat {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: var(--rose);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.certificat-contenu h3 {
+
+    color: var(--rose-fonce);
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    margin-bottom: 6px;
+
+}
+
+
+.certificat-contenu h4 {
+
+    color: var(--gris);
+
+    margin-bottom: 14px;
+
+    font-size: 17px;
+
+}
+
+
+.certificat-contenu p {
+
+    margin-bottom: 9px;
+
+}
+
+
+.certificat-info {
+
+    font-weight: bold;
+
+}
+
+
+.certificat-date {
+
+    color: var(--rose);
+
+    font-weight: bold;
+
+}
+
+
+
+/* ===================================== */
+/* BOUTON CERTIFICAT */
+/* ===================================== */
+
+.btn-certificat {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 20px;
+
+    color: white;
+
+    background-color: var(--rose-fonce);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.btn-certificat:hover {
+
+    background-color: var(--rose);
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* ===================================== */
+/* CONTACT */
+/* ===================================== */
+
+.contact-contenu {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+}
+
+
+.contact-info h3 {
+
+    color: var(--rose-fonce);
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact-info p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.formulaire {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.formulaire label {
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+.formulaire input,
+.formulaire textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+}
+
+
+.formulaire textarea {
+
+    resize: vertical;
+
+}
+
+
+.formulaire input:focus,
+.formulaire textarea:focus {
+
+    outline: none;
+
+    border-color: var(--rose);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(226, 82, 155, 0.12);
+
+}
+
+
+
+/* ===================================== */
+/* FOOTER */
+/* ===================================== */
+
+footer {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8d1758,
+            #b92878
+        );
+
+}
+
+
+footer h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.copyright {
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+
+}
+
+
+
+/* ===================================== */
+/* TABLETTE */
+/* ===================================== */
+
+@media (max-width: 1000px) {
+
+    .grille-competences {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .grille-certifications {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    .menu {
+
+        display: none;
+
+    }
+
+
+    .accueil {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+
+    }
+
+
+    .accueil-texte,
+    .accueil-photo {
+
+        width: 100%;
+
+    }
+
+
+    .boutons {
+
+        justify-content: center;
+
+    }
+
+
+    .apropos-contenu {
+
+        flex-direction: column;
+
+    }
+
+
+    .apropos-photo,
+    .apropos-texte {
+
+        width: 100%;
+
+    }
+
+
+    .apropos-texte {
+
+        text-align: center;
+
+    }
+
+
+    .contact-contenu {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+/* ===================================== */
+/* TELEPHONE */
+/* ===================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 18px 7%;
+
+    }
+
+
+    .section {
+
+        padding: 70px 7%;
+
+    }
+
+
+    .accueil {
+
+        padding: 70px 7%;
+
+    }
+
+
+    .accueil h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .accueil h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .photo-profil {
+
+        width: 240px;
+
+        height: 240px;
+
+    }
+
+
+    .photo-apropos {
+
+        width: 240px;
+
+        height: 310px;
+
+    }
+
+
+    .titre-section {
+
+        font-size: 31px;
+
+    }
+
+
+    .grille-competences {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .experience {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .grille-certifications {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .apercu-pdf,
+    .apercu-badge {
+
+        height: 250px;
+
+    }
+
+
+    .boutons {
+
+        flex-direction: column;
+
+    }
+
+}
